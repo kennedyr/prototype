@@ -214,7 +214,9 @@ SystemJS.config({
     'ts': 'github:frankwallis/plugin-typescript@5.1.2',
     'util': 'github:jspm/nodelibs-util@0.2.0-alpha',
     'vm': 'github:jspm/nodelibs-vm@0.2.0-alpha',
-    'zone.js': 'npm:zone.js@0.7.6'
+    'zone.js': 'npm:zone.js@0.7.6',
+    '@ng-bootstrap/ng-bootstrap': 'node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
+    '@angular/forms': 'npm:@angular/forms@2.4.4',
   },
   packages: {
     'github:frankwallis/plugin-typescript@5.1.2': {

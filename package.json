@@ -55,6 +55,7 @@
   },
   "jspm": {
     "dependencies": {
+      "@angular/forms": "npm:@angular/forms@^2.4.4",
       "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@^2.0.0",
       "@angular/http": "npm:@angular/http@^2.0.0",
       "core-js": "npm:core-js@^2.4.1",
