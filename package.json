@@ -263,5 +263,8 @@
       "SystemJS": true,
       "__moduleName": true
     }
+  },
+  "dependencies": {
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.18"
   }
 }

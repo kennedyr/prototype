@@ -16,7 +16,5 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "components-bootstrap": "^3.3.7"
   }
 }
