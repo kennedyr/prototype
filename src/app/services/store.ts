@@ -22,20 +22,12 @@ export class TodoStore {
 
 	constructor() {
 		let persistedTodos = JSON.parse(localStorage.getItem('angular2-todos') || '[]');
-		// Normalize back into classes
+		// normalize back into classes
 		this.todos = persistedTodos.map( (todo: {_title: String, completed: Boolean}) => {
 			let ret = new Todo(todo._title);
 			ret.completed = todo.completed;
 			return ret;
 		});
-	}
-
-	private updateStore() {
-		localStorage.setItem('angular2-todos', JSON.stringify(this.todos));
-	}
-
-	private getWithCompleted(completed: Boolean) {
-		return this.todos.filter((todo: Todo) => todo.completed === completed);
 	}
 
 	allCompleted() {
@@ -73,5 +65,13 @@ export class TodoStore {
 	add(title: String) {
 		this.todos.push(new Todo(title));
 		this.updateStore();
+	}
+
+	private updateStore() {
+		localStorage.setItem('angular2-todos', JSON.stringify(this.todos));
+	}
+
+	private getWithCompleted(completed: Boolean) {
+		return this.todos.filter((todo: Todo) => todo.completed === completed);
 	}
 }
