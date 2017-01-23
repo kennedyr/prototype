@@ -267,5 +267,7 @@
       "__moduleName": true
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap-less": "^3.3.8"
+  }
 }
