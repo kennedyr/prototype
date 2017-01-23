@@ -193,6 +193,7 @@ SystemJS.config({
     '@angular/platform-browser': 'npm:@angular/platform-browser@2.4.4',
     '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic@2.4.4',
     '@angular/router': 'npm:@angular/router@3.4.4',
+    '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap@1.0.0-alpha.18',
     'assert': 'github:jspm/nodelibs-assert@0.2.0-alpha',
     'buffer': 'github:jspm/nodelibs-buffer@0.2.0-alpha',
     'child_process': 'github:jspm/nodelibs-child_process@0.2.0-alpha',
@@ -215,8 +216,7 @@ SystemJS.config({
     'util': 'github:jspm/nodelibs-util@0.2.0-alpha',
     'vm': 'github:jspm/nodelibs-vm@0.2.0-alpha',
     'zone.js': 'npm:zone.js@0.7.6',
-    '@ng-bootstrap/ng-bootstrap': 'node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
-    '@angular/forms': 'npm:@angular/forms@2.4.4',
+    '@angular/forms': 'npm:@angular/forms@2.4.4'
   },
   packages: {
     'github:frankwallis/plugin-typescript@5.1.2': {

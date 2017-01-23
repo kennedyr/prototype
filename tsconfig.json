@@ -9,7 +9,9 @@
     "types": [
       "jasmine",
       "es6-shim"
-    ]
+    ],
+    "module": "system",
+    "declaration": true
   },
   "compileOnSave": false,
   "filesGlob": [
