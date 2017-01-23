@@ -195,6 +195,7 @@ SystemJS.config({
     '@angular/router': 'npm:@angular/router@3.4.4',
     '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap@1.0.0-alpha.18',
     'assert': 'github:jspm/nodelibs-assert@0.2.0-alpha',
+    'bootstrap-less': 'github:distros/bootstrap-less@3.3.9',
     'buffer': 'github:jspm/nodelibs-buffer@0.2.0-alpha',
     'child_process': 'github:jspm/nodelibs-child_process@0.2.0-alpha',
     'constants': 'github:jspm/nodelibs-constants@0.2.0-alpha',
@@ -447,6 +448,11 @@ SystemJS.config({
     'npm:rxjs@5.0.3': {
       'map': {
         'symbol-observable': 'npm:symbol-observable@1.0.4'
+      }
+    },
+    'github:distros/bootstrap-less@3.3.9': {
+      'map': {
+        'jquery': 'github:components/jquery@3.1.1'
       }
     }
   }
