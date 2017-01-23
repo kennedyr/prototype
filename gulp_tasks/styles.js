@@ -12,7 +12,9 @@ gulp.task('styles', styles);
 function styles() {
   return gulp.src(conf.path.src('index.less'))
     .pipe(sourcemaps.init())
-    .pipe(less({compress: false})).on('error', conf.errorHandler('Less'))
+    .pipe(less({
+      paths: [ '.', './node_modules/bootstrap-less' ],
+      compress: false})).on('error', conf.errorHandler('Less'))
     .pipe(postcss([autoprefixer()])).on('error', conf.errorHandler('Autoprefixer'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(conf.path.tmp()))

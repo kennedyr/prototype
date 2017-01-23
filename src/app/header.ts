@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'fountain-header',
+  selector: 'app-header',
   moduleId: __moduleName,
   templateUrl: 'header.html'
 })
