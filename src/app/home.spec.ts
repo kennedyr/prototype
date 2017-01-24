@@ -1,9 +1,7 @@
 import {Component} from '@angular/core';
 import {TestBed, async} from '@angular/core/testing';
-import {MainComponent} from './main.ts';
+import {HomeComponent} from './home.ts';
 
-@Component({selector: 'fountain-techs', template: ''})
-class MockTechsComponent {}
 @Component({selector: 'fountain-footer', template: ''})
 class MockFooterComponent {}
 @Component({selector: 'fountain-header', template: ''})
@@ -11,12 +9,11 @@ class MockHeaderComponent {}
 @Component({selector: 'fountain-title', template: ''})
 class MockTitleComponent {}
 
-describe('Main Component', () => {
+describe('Home Component', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        MainComponent,
-        MockTechsComponent,
+        HomeComponent,
         MockFooterComponent,
         MockHeaderComponent,
         MockTitleComponent
@@ -25,13 +22,12 @@ describe('Main Component', () => {
     TestBed.compileComponents();
   }));
 
-  it('should render the header, title, techs and footer', () => {
-    const fixture = TestBed.createComponent(MainComponent);
+  it('should render the header, title, and footer', () => {
+    const fixture = TestBed.createComponent(HomeComponent);
     fixture.detectChanges();
     const main = fixture.nativeElement;
-    expect(main.querySelector('fountain-header')).toBeDefined();
-    expect(main.querySelector('fountain-title')).toBeDefined();
-    expect(main.querySelector('fountain-techs')).toBeDefined();
-    expect(main.querySelector('fountain-footer')).toBeDefined();
+    expect(main.querySelector('app-header')).toBeDefined();
+    expect(main.querySelector('app-title')).toBeDefined();
+    expect(main.querySelector('app-footer')).toBeDefined();
   });
 });
