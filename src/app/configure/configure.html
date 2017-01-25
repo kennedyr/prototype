@@ -3,65 +3,145 @@
   Search Products
 </a> -->
 <div id="productLookup">
-  <div class="well">
-    <form>
-      <div class="row">
-        <div class="col-xs-6 form-group">
-          <label for="partCode">Part Code</label>
-          <input type="text" class="form-control" id="partCode" placeholder="8A00001">
-        </div>
-        <div class="col-xs-6 form-group">
-          <label for="aka">AKA</label>
-          <input type="text" class="form-control" id="aka" placeholder="">
-        </div>
-        <div class="col-xs-6 form-group">
-          <label for="customer">Customer</label>
-          <input type="text" class="form-control" id="customer" placeholder="1001">
-        </div>
-        <div class="col-xs-6 form-group">
-          <label for="description">Description</label>
-          <input type="text" class="form-control" id="description" placeholder="">
-        </div>
-        <div class="col-xs-6 form-group">
-          <label for="unknown">???</label>
-          <input type="text" class="form-control" id="unknown" placeholder="">
-        </div>
-        <div class="col-xs-6 form-group">
-          <button type="submit" class="btn btn-default">Lookup</button>
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="panel panel-success">
-    <div class="panel-heading">
-      Primary Characteristics
+
+  <div class="alert alert-success" role="alert">The configuration is valid</div>
+  <form>
+    <div class="form-group">
+      <label for="partCode">Part Code</label>
+      <input type="text" class="form-control" id="partCode">
     </div>
-    <form>
-      <div class="row">
-        <div class="col-xs-6 form-group">
-          <label for="partCode">Part Code</label>
-          <input type="text" class="form-control" id="partCode" placeholder="8A00001">
-        </div>
-        <div class="col-xs-6 form-group">
-          <label for="aka">AKA</label>
-          <input type="text" class="form-control" id="aka" placeholder="">
-        </div>
-        <div class="col-xs-6 form-group">
-          <label for="customer">Customer</label>
-          <input type="text" class="form-control" id="customer" placeholder="1001">
-        </div>
-        <div class="col-xs-6 form-group">
-          <label for="description">Description</label>
-          <input type="text" class="form-control" id="description" placeholder="">
-        </div>
-        <div class="col-xs-6 form-group">
-          <label for="unknown">???</label>
-          <input type="text" class="form-control" id="unknown" placeholder="">
-        </div>
-        <div class="col-xs-6 form-group">
-          <button type="submit" class="btn btn-default">Lookup</button>
-        </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-default pull-right">Lookup</button>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="form-group">
+      <label for="aka">AKA</label>
+      <input type="text" class="form-control" id="aka" placeholder="">
+    </div>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="customer">Customer</label>
+        <select class="form-control" id="customer">
+              <option></option>
+              <option>7030</option>
+              <option>2961</option>
+              <option>5891</option>
+        </select>
       </div>
-    </form>
-  </div>
+      <div class="form-group col-md-6">
+        <label for="company">Company</label>
+        <input type="text" class="form-control" id="company" placeholder="AIRBUS CORPORATE JET CENTR">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" id="description" placeholder="KYDEX T">
+    </div>
+
+    <h3>Primary Charicteristics</h3>
+    <hr>
+    <div class="form-group">
+      <label for="product">Product</label>
+      <select class="form-control" id="product">
+          <option></option>
+          <option>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <select class="form-control" id="type">
+          <option></option>
+          <option>SHEET</option>
+          <option>THICK</option>
+          <option>WIDE</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="texture">Texture</label>
+      <select class="form-control" id="texture">
+          <option></option>
+          <option>P1</option>
+          <option>P1HG</option>
+          <option>P3</option>
+          <option>P3HG</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="color">Color</label>
+      <select class="form-control" id="color">
+          <option></option>
+          <option>1200</option>
+          <option>1220</option>
+          <option>1231</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="cap">Cap</label>
+      <select class="form-control" id="cap">
+          <option></option>
+          <option>II001 - Clouds</option>
+          <option>II003 - Sticks</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="sqr">SQR</label>
+      <select class="form-control" id="sqr">
+          <option></option>
+          <option>SQR041</option>
+          <option>SQR044</option>
+          <option>SQR045</option>
+        </select>
+    </div>
+    <div class="row">
+      <div class="col-md-3 form-group">
+        <label for="width">Width</label><span class="units pull-right">in</span>
+        <input type="text" class="form-control" id="width" placeholder="">
+        <span class="help-block">24 - 48 <span class="units">in</span></span>
+      </div>
+      <div class="col-md-3 form-group">
+        <label for="length">Length</label><span class="units pull-right">in</span>
+        <input type="text" class="form-control" id="length" placeholder="">
+        <span class="help-block">24 - 96 <span class="units">in</span></span>
+      </div>
+      <div class="col-md-3 form-group">
+        <label for="thickness">Thickness</label><span class="units pull-right">in</span>
+        <input type="text" class="form-control" id="thickness" placeholder="">
+        <span class="help-block">0.028 - 0.0156 <span class="units">in</span></span>
+      </div>
+      <div class="col-md-3 form-group">
+        <label>&nbsp;</label>
+        <div class="form-control-static"><input type="checkbox" id="metric"> is Metric</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label>U.S.</label>
+        <p class="form-control-static"><span>35.984 in</span> x <span>48.032 in</span> x <span>0.079 in</span></p>
+        <p><span>7.498 lbs</span> / <span>12.003 ft<sup>2</sup></span></p>
+        <p><span>0.624 lbs/ft<sup>2</sup></span></p>
+        <p><span>0.054913 lbs/in<sup>3</sup></span></p>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Metric</label>
+        <p class="form-control-static"><span>1220 mm</span> x <span>915 mm</span> x <span>2.0 mm</span></p>
+        <p><span>3.410 kg</span> / <span>1.116 m<sup>2</sup></span></p>
+        <p><span>3.060 kg/m<sup>2</sup></span></p>
+        <p><span>0.000000152 kg/mm<sup>3</sup></span></p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="pull-right">
+        <button type="submit" class="btn btn-primary">Configure</button>
+        <button type="reset" class="btn btn-default">Clear</button>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </form>
 </div>
