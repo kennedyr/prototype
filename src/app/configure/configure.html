@@ -1,20 +1,20 @@
-<h3>Lookup</h3>
+<h3>Configure Product</h3>
 <!-- <a class="btn btn-primary" role="button" data-toggle="collapse" href="#productLookup" aria-expanded="false" aria-controls="productLookup">
   Search Products
 </a> -->
-<div id="productLookup">
-
+<div id="productConfigure">
   <div class="alert alert-success" role="alert">The configuration is valid</div>
   <form>
     <div class="form-group">
-      <label for="partCode">Part Code</label>
-      <input type="text" class="form-control" id="partCode">
+      <label for="lookup">Lookup</label>
+      <input type="text" class="form-control" id="lookup">
     </div>
     <div class="form-group">
-      <button type="button" class="btn btn-default pull-right">Lookup</button>
+      <button type="button" class="btn btn-default pull-right">Search</button>
     </div>
     <div class="clearfix"></div>
-
+  </form>
+  <form>
     <div class="form-group">
       <label for="aka">AKA</label>
       <input type="text" class="form-control" id="aka" placeholder="">
@@ -38,7 +38,6 @@
       <label for="description">Description</label>
       <input type="text" class="form-control" id="description" placeholder="KYDEX T">
     </div>
-
     <h3>Primary Charicteristics</h3>
     <hr>
     <div class="form-group">
@@ -99,43 +98,70 @@
     </div>
     <div class="row">
       <div class="col-md-3 form-group">
-        <label for="width">Width</label><span class="units pull-right">in</span>
-        <input type="text" class="form-control" id="width" placeholder="">
-        <span class="help-block">24 - 48 <span class="units">in</span></span>
+        <label for="width">Width</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="width" placeholder="">
+          <div class="input-group-addon">in</div>
+        </div>
+        <span class="help-block">24 - 48<span class="units">in</span></span>
       </div>
       <div class="col-md-3 form-group">
-        <label for="length">Length</label><span class="units pull-right">in</span>
-        <input type="text" class="form-control" id="length" placeholder="">
-        <span class="help-block">24 - 96 <span class="units">in</span></span>
+        <label for="length">Length</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="length" placeholder="">
+          <div class="input-group-addon">in</div>
+        </div>
+        <span class="help-block">24 - 96<span class="units">in</span></span>
       </div>
       <div class="col-md-3 form-group">
-        <label for="thickness">Thickness</label><span class="units pull-right">in</span>
-        <input type="text" class="form-control" id="thickness" placeholder="">
-        <span class="help-block">0.028 - 0.0156 <span class="units">in</span></span>
+        <label for="thickness">Thickness</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="thickness" placeholder="">
+          <div class="input-group-addon">in</div>
+        </div>
+        <span class="help-block">0.028 - 0.0156<span class="units">in</span></span>
       </div>
       <div class="col-md-3 form-group">
-        <label>&nbsp;</label>
-        <div class="form-control-static"><input type="checkbox" id="metric"> is Metric</div>
+        <br />
+        <div class="checkbox">
+          <label><input type="checkbox" id="metric"> Metric</label>
+        </div>
       </div>
     </div>
-
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="pricePerWeight">Price / lb</label>
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <input type="number" class="form-control" id="pricePerWeight" placeholder="">
+          <div class="input-group-addon"> / lb</div>
+        </div>
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="pricePerUnit">Price / Pc</label>
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <input type="number" class="form-control" id="pricePerUnit" placeholder="">
+          <div class="input-group-addon"> / Pc</div>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="form-group col-md-6">
         <label>U.S.</label>
-        <p class="form-control-static"><span>35.984 in</span> x <span>48.032 in</span> x <span>0.079 in</span></p>
-        <p><span>7.498 lbs</span> / <span>12.003 ft<sup>2</sup></span></p>
-        <p><span>0.624 lbs/ft<sup>2</sup></span></p>
-        <p><span>0.054913 lbs/in<sup>3</sup></span></p>
+        <p class="form-control-static lead"><span>35.984 in</span> x <span>48.032 in</span> x <span>0.079 in</span></p>
+        <p class="form-control-static lead"><span>7.498 lbs</span> / <span>12.003 ft<sup>2</sup></span></p>
+        <p class="form-control-static lead"><span>0.624 lbs/ft<sup>2</sup></span></p>
+        <p class="form-control-static lead"><span>0.054913 lbs/in<sup>3</sup></span></p>
       </div>
       <div class="form-group col-md-6">
         <label>Metric</label>
-        <p class="form-control-static"><span>1220 mm</span> x <span>915 mm</span> x <span>2.0 mm</span></p>
-        <p><span>3.410 kg</span> / <span>1.116 m<sup>2</sup></span></p>
-        <p><span>3.060 kg/m<sup>2</sup></span></p>
-        <p><span>0.000000152 kg/mm<sup>3</sup></span></p>
+        <p class="form-control-static lead"><span>1220 mm</span> x <span>915 mm</span> x <span>2.0 mm</span></p>
+        <p class="form-control-static lead"><span>3.410 kg</span> / <span>1.116 m<sup>2</sup></span></p>
+        <p class="form-control-static lead"><span>3.060 kg/m<sup>2</sup></span></p>
+        <p class="form-control-static lead"><span>0.000000152 kg/mm<sup>3</sup></span></p>
       </div>
     </div>
-
     <div class="form-group">
       <div class="pull-right">
         <button type="submit" class="btn btn-primary">Configure</button>
