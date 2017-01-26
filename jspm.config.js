@@ -186,14 +186,14 @@ SystemJS.config({
     'github:*/*.json'
   ],
   map: {
-    '@angular/common': 'npm:@angular/common@2.4.4',
-    '@angular/compiler': 'npm:@angular/compiler@2.4.4',
-    '@angular/core': 'npm:@angular/core@2.4.4',
-    '@angular/http': 'npm:@angular/http@2.4.4',
-    '@angular/platform-browser': 'npm:@angular/platform-browser@2.4.4',
-    '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic@2.4.4',
-    '@angular/router': 'npm:@angular/router@3.4.4',
-    '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap@1.0.0-alpha.18',
+    '@angular/common': 'npm:@angular/common@2.4.5',
+    '@angular/compiler': 'npm:@angular/compiler@2.4.5',
+    '@angular/core': 'npm:@angular/core@2.4.5',
+    '@angular/http': 'npm:@angular/http@2.4.5',
+    '@angular/platform-browser': 'npm:@angular/platform-browser@2.4.5',
+    '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic@2.4.5',
+    '@angular/router': 'npm:@angular/router@3.4.5',
+    '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap@1.0.0-alpha.19',
     'assert': 'github:jspm/nodelibs-assert@0.2.0-alpha',
     'bootstrap-less': 'github:distros/bootstrap-less@3.3.9',
     'buffer': 'github:jspm/nodelibs-buffer@0.2.0-alpha',
@@ -205,6 +205,7 @@ SystemJS.config({
     'fs': 'github:jspm/nodelibs-fs@0.2.0-alpha',
     'module': 'github:jspm/nodelibs-module@0.2.0-alpha',
     'net': 'github:jspm/nodelibs-net@0.2.0-alpha',
+    'ng2-table': 'npm:ng2-table@1.3.2',
     'os': 'github:jspm/nodelibs-os@0.2.0-alpha',
     'path': 'github:jspm/nodelibs-path@0.2.0-alpha',
     'process': 'github:jspm/nodelibs-process@0.2.0-alpha',
@@ -217,7 +218,7 @@ SystemJS.config({
     'util': 'github:jspm/nodelibs-util@0.2.0-alpha',
     'vm': 'github:jspm/nodelibs-vm@0.2.0-alpha',
     'zone.js': 'npm:zone.js@0.7.6',
-    '@angular/forms': 'npm:@angular/forms@2.4.4'
+    '@angular/forms': 'npm:@angular/forms@2.4.5'
   },
   packages: {
     'github:frankwallis/plugin-typescript@5.1.2': {
