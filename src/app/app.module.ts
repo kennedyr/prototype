@@ -11,7 +11,7 @@ import {ConfigureComponent} from './configure/configure.ts';
 import {DemoComponent} from './history/index.ts';
 import {InventoryComponent} from './inventory/inventory.ts';
 import {TableSectionComponent} from './history/components/table-section.ts';
-import {TableDemoComponent} from './history/components/table/table-demo.ts';
+import {TableHistoryComponent} from './history/components/table/table-history.ts';
 import {NG_TABLE_DIRECTIVES} from 'ng2-table';
 import {Ng2BootstrapModule} from 'ng2-bootstrap';
 
@@ -31,7 +31,7 @@ import {Ng2BootstrapModule} from 'ng2-bootstrap';
     DemoComponent,
     InventoryComponent,
     TableSectionComponent,
-    TableDemoComponent,
+    TableHistoryComponent,
     NG_TABLE_DIRECTIVES
   ],
   bootstrap: [AppComponent]

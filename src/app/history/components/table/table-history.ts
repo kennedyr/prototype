@@ -5,34 +5,13 @@ import {NG_TABLE_DIRECTIVES} from 'ng2-table';
 import {TableData} from './table-data.ts';
 
 @Component({
-  selector: 'table-demo',
-  template: `
-  <input *ngIf="config.filtering" placeholder="Filter"
-         [ngTableFiltering]="config.filtering"
-         (tableChanged)="onChangeTable(config)"/>
-
-  <ng-table [config]="config.sorting"
-             (tableChanged)="onChangeTable(config)"
-             [rows]="rows" [columns]="columns">
-  </ng-table>
-  <pagination *ngIf="config.paging"
-              class="pagination-sm"
-              [(ngModel)]="page"
-              [totalItems]="length"
-              [itemsPerPage]="itemsPerPage"
-              [maxSize]="maxSize"
-              [boundaryLinks]="true"
-              [rotate]="false"
-              (pageChanged)="onChangeTable(config, $event)"
-              (numPages)="numPages = $event">
-  </pagination>
-  <pre *ngIf="config.paging" class="card card-block card-header">Page: {{page}} / {{numPages}}</pre>
-
-  `,
+  selector: 'table-history',
+  moduleId: __moduleName,
+  templateUrl: 'table-history.html',
   directives: [PAGINATION_DIRECTIVES, NG_TABLE_DIRECTIVES, NgClass, NgIf, CORE_DIRECTIVES, FORM_DIRECTIVES]
 })
 
-export class TableDemoComponent {
+export class TableHistoryComponent {
   public rows: Array<any> = [];
   public columns: Array<any> = [
     { title: 'Time', name: 'Time' },
