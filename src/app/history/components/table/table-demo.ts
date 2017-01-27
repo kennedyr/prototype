@@ -35,12 +35,15 @@ import {TableData} from './table-data.ts';
 export class TableDemoComponent {
   public rows: Array<any> = [];
   public columns: Array<any> = [
-    { title: 'Name', name: 'name' },
-    { title: 'Position', name: 'position', sort: false },
-    { title: 'Office', name: 'office', sort: 'asc' },
-    { title: 'Extn.', name: 'ext', sort: '' },
-    { title: 'Start date', name: 'startDate' },
-    { title: 'Salary ($)', name: 'salary' }
+    { title: 'Time', name: 'Time' },
+    { title: 'User', name: 'User' },
+    { title: 'PartNumber', name: 'PartNo' },
+    { title: 'Description', name: 'Description' },
+    { title: 'Customer', name: 'Cust' },
+    { title: 'AKA', name: 'AKA' },
+    { title: 'Price', name: 'Price' },
+    { title: 'Unit of Measure', name: 'UOM' },
+    { title: 'Unit Price', name: 'PriceEach' }
   ];
   public page: number = 1;
   public itemsPerPage: number = 10;
@@ -51,7 +54,7 @@ export class TableDemoComponent {
   public config: any = {
     paging: true,
     sorting: { columns: this.columns },
-    filtering: { filterString: '', columnName: 'position' }
+    filtering: { filterString: '', columnName: 'PartNo' }
   };
 
   private data: Array<any> = TableData;
@@ -109,6 +112,7 @@ export class TableDemoComponent {
 
     let filteredData: Array<any> = data.filter((item: any) =>
       item[config.filtering.columnName].match(this.config.filtering.filterString));
+
 
     return filteredData;
   }
