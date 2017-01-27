@@ -8,8 +8,9 @@ import {HeaderComponent} from './header.ts';
 import {TitleComponent} from './title.ts';
 import {FooterComponent} from './footer.ts';
 import {ConfigureComponent} from './configure/configure.ts';
-import {HistoryComponent} from './history/history.ts';
+import {HistoryIndexComponent} from './history/index.ts';
 import {InventoryComponent} from './inventory/inventory.ts';
+import {HistoryComponent} from './history/history.ts';
 
 @NgModule({
   imports: [
@@ -23,8 +24,9 @@ import {InventoryComponent} from './inventory/inventory.ts';
     TitleComponent,
     FooterComponent,
     ConfigureComponent,
-    HistoryComponent,
-    InventoryComponent
+    HistoryIndexComponent,
+    InventoryComponent,
+    HistoryComponent
   ],
   bootstrap: [AppComponent]
 })
