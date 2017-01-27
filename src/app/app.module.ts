@@ -8,14 +8,18 @@ import {HeaderComponent} from './header.ts';
 import {TitleComponent} from './title.ts';
 import {FooterComponent} from './footer.ts';
 import {ConfigureComponent} from './configure/configure.ts';
-import {HistoryIndexComponent} from './history/index.ts';
+import {DemoComponent} from './history/index.ts';
 import {InventoryComponent} from './inventory/inventory.ts';
-import {HistoryComponent} from './history/history.ts';
+import {TableSectionComponent} from './history/components/table-section.ts';
+import {TableDemoComponent} from './history/components/table/table-demo.ts';
+import {NG_TABLE_DIRECTIVES} from 'ng2-table';
+import {Ng2BootstrapModule} from 'ng2-bootstrap';
 
 @NgModule({
   imports: [
     BrowserModule,
-    routing
+    routing,
+    Ng2BootstrapModule.forRoot()
   ],
   declarations: [
     AppComponent,
@@ -24,9 +28,11 @@ import {HistoryComponent} from './history/history.ts';
     TitleComponent,
     FooterComponent,
     ConfigureComponent,
-    HistoryIndexComponent,
+    DemoComponent,
     InventoryComponent,
-    HistoryComponent
+    TableSectionComponent,
+    TableDemoComponent,
+    NG_TABLE_DIRECTIVES
   ],
   bootstrap: [AppComponent]
 })

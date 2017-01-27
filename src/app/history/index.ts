@@ -1,10 +1,19 @@
 import {Component} from '@angular/core';
-import {HistoryComponent} from './history.ts';
+import {NgClass} from '@angular/common';
+import {TableSectionComponent} from './components/table-section.ts';
 
 @Component({
-  selector: 'history-app',
-  moduleId: __moduleName,
-  templateUrl: 'index.html',
-  directives: [HistoryComponent]
+  selector: 'app',
+  template: `
+  <div class="container">
+    <h1>History Wrapper</h1>
+    <table-section class="col-md-12"></table-section>
+  </div>
+  `,
+  directives: [
+    NgClass,
+    TableSectionComponent
+  ]
 })
-export class HistoryIndexComponent {}
+export class DemoComponent {
+}

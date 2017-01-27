@@ -205,6 +205,7 @@ SystemJS.config({
     'fs': 'github:jspm/nodelibs-fs@0.2.0-alpha',
     'module': 'github:jspm/nodelibs-module@0.2.0-alpha',
     'net': 'github:jspm/nodelibs-net@0.2.0-alpha',
+    'ng2-bootstrap': 'jspm_packages/npm/ng2-bootstrap@1.3.1/bundles/ng2-bootstrap.umd.js',
     'ng2-table': 'npm:ng2-table@1.3.2',
     'os': 'github:jspm/nodelibs-os@0.2.0-alpha',
     'path': 'github:jspm/nodelibs-path@0.2.0-alpha',
@@ -454,6 +455,11 @@ SystemJS.config({
     'github:distros/bootstrap-less@3.3.9': {
       'map': {
         'jquery': 'github:components/jquery@3.1.1'
+      }
+    },
+    'npm:ng2-bootstrap@1.3.1': {
+      'map': {
+        'moment': 'npm:moment@2.17.1'
       }
     }
   }
