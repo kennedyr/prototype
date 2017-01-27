@@ -1,7 +1,7 @@
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './home.ts';
 import {ConfigureComponent} from './configure/configure.ts';
-import {DemoComponent} from './history/index.ts';
+import {HistoryComponent} from './history/index.ts';
 import {InventoryComponent} from './inventory/inventory.ts';
 
 
@@ -16,7 +16,7 @@ export const routes: Routes = [
   },
   {
     path: 'history',
-    component: DemoComponent
+    component: HistoryComponent
   },
   {
     path: 'inventory',

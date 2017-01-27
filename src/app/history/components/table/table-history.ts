@@ -1,14 +1,10 @@
 import {Component} from '@angular/core';
-import {CORE_DIRECTIVES, FORM_DIRECTIVES, NgClass, NgIf} from '@angular/common';
-import {PAGINATION_DIRECTIVES} from 'ng2-bootstrap';
-import {NG_TABLE_DIRECTIVES} from 'ng2-table';
 import {TableData} from './table-data.ts';
 
 @Component({
   selector: 'table-history',
   moduleId: __moduleName,
-  templateUrl: 'table-history.html',
-  directives: [PAGINATION_DIRECTIVES, NG_TABLE_DIRECTIVES, NgClass, NgIf, CORE_DIRECTIVES, FORM_DIRECTIVES]
+  templateUrl: 'table-history.html'
 })
 
 export class TableHistoryComponent {
