@@ -10,7 +10,7 @@ gulp.task('systemjs', gulp.series(replaceTemplates, systemjs));
 gulp.task('systemjs:html', updateIndexHtml);
 
 function systemjs(done) {
-  const builder = new Builder(conf.path.tmp(), 'jspm.config.js');
+  const builder = new Builder('/', 'jspm.config.js');
   builder.config({
     paths: {
       "github:*": "jspm_packages/github/*",
@@ -23,8 +23,8 @@ function systemjs(done) {
     ]
   });
   builder.buildStatic(
-    'templates/index.ts',
-    'index.js',
+    './' + conf.path.tmp('templates/index.ts'),
+    './' + conf.path.tmp('index.js'),
     {
       production: true,
       browser: true
@@ -44,7 +44,7 @@ function replaceTemplates() {
 function updateIndexHtml() {
   return gulp.src(conf.path.src('index.html'))
     .pipe(replace(
-      /<script src="jspm_packages\/system.js">[\s\S]*System.import.*\n\s*<\/script>/,
+      /<script src="jspm_packages\/system.js">[\s\S]*System.import.*[\s\S]*<\/script>/,
       `<script src="index.js"></script>`
     ))
     .pipe(replace(
